@@ -1,0 +1,1 @@
+﻿Remove-ADUser -Identity RZoul -Confirm:$false
