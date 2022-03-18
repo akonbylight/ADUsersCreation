@@ -1,1 +1,0 @@
-﻿(Get-ADGroup Dev -Properties *).Member.Count
