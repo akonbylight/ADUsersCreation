@@ -1,0 +1,10 @@
+Username, Password, Firstname, Lastname, Groups 
+KAbou, password@123, Kass, Abou, "OU=pddm,DC=pddm,DC=fscedge,DC=com", Dev
+BNeni, password@123, Baki, Neni, "OU=pddm,DC=pddm,DC=fscedge,DC=com", Dev
+EHadj, password@123, El, Hadj, "OU=pddm,DC=pddm,DC=fscedge,DC=com", "Dev, Security"
+agovin-ext, Password@123, Alexanders, GOVIN, "Dev, Security"
+aidan.filipi, Password@123, Aidan, Filipi, "Dev, Security"
+akhem-ext, Password@123, Anthony, Khem, "Dev, Security"
+ambejan, Password@123, Ana Maria, Bejan, Dev
+
+

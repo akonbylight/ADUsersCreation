@@ -1,0 +1,4 @@
+Groupname, Description, Path
+ACCT, "test-group", "OU=Users,OU=pddm,DC=pddm,DC=fscedge,DC=com"
+PROD, "test-group", "OU=Users,OU=pddm,DC=pddm,DC=fscedge,DC=com"
+TNT, "test-group", "OU=Users,OU=pddm,DC=pddm,DC=fscedge,DC=com"

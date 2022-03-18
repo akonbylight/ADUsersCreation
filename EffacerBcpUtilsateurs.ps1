@@ -1,6 +1,6 @@
 ﻿Import-Module ActiveDirectory
 
-$UsersDel = Import-Csv "C:\SCRIPTS\BulkUsersDeletion.csv"
+$UsersDel = Import-Csv "C:\SCRIPTS\DeleteNAB Add Users Workspace Clean Name Convention 20220305.csv" 
 
 foreach ($User in $UsersDel)
 {
