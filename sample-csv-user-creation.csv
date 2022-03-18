@@ -1,4 +1,0 @@
-Username, Password, Firstname, Lastname, OU, Group
-BZoul, password@123, Bass, Zoul, "OU=pddm,DC=pddm,DC=fscedge,DC=com", Dev
-Zouksr, password@123, Zouk, Sr, "CN=Dev,OU=pddm,DC=pddm,DC=fscedge,DC=com", Dev
-RZoul, password@123, Raz, Zoul, "CN=Dev,OU=pddm,DC=pddm,DC=fscedge,DC=com", Dev
