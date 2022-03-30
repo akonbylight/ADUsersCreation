@@ -1,0 +1,1 @@
+﻿Get-aduser -searchbase "OU=Users,OU=pddm-nab,DC=pddm-nab,DC=fscedge,DC=com" -filter *

@@ -8,7 +8,7 @@
 # * Groups     This is a delimited set of groups that the user should be added to. If we use commas the field will need to be quoted in the csv. If we choose semicolons quoting may not be required
 #                for example this could contain "non-ato-engineer-users, workspaces, dev" as three groups to add the user to.
 param (
-    [string]$csvADUsersToCreate = "C:\SCRIPTS\sample-csv-user-creation2.csv"
+    [string]$csvADUsersToCreate = "C:\SCRIPTS\USPTO-Integration-Jouve team members.csv"
 )
 
 #Import active directory module for running AD cmdlets
@@ -27,16 +27,15 @@ foreach ($User in $ADUsers)
     $Password   = $User.Password
     $Firstname  = $User.Firstname
     $Lastname   = $User.Lastname
-    #$OU         = $User.OU
-    $Groups =    $User.Groups -split","
+    $Groups     = $User.Groups -split","
+    $Email   = $User.Email
 
    Write-Output "username $username"
- # Write-Output "username $name"
    Write-Output "password $password"
    Write-Output "firstname $firstname"
    Write-Output "lastname $lastname"
- # Write-Output "OU $OU"
    Write-Output "Groups $Groups"
+   Write-Output "Email $Email"
  
     #Check to see if the user already exist in the AD
     if (Get-ADUser -F {SamAccountName -eq $Username})
@@ -53,6 +52,7 @@ $ErrorActionPreference
         #Account will be created in the User's OU
         New-ADUser `
              -Name $Username `
+             -Email $Email `
              -GivenName $Firstname `
              -Surname $Lastname `
              -Enabled $True `

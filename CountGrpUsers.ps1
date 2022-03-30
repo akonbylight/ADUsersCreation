@@ -1,0 +1,1 @@
+﻿(Get-ADGroup fscedge -Properties *).Member.Count

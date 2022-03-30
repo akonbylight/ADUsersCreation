@@ -1,6 +1,4 @@
-﻿#$names = @( "RZoul", "EHadj", "Steph" )
-
-$names = Get-Content "C:\SCRIPTS\NAB Add Users Workspace Clean Name Convention 20220305.csv"
+﻿$names = Get-Content "C:\SCRIPTS\USPTO-Integration-Jouve team members.csv"
 
 foreach ($name in $names)
 

@@ -18,17 +18,17 @@
  param (
     [string]$log = "%temp%\named-params.log",
     [string]$region = "us-east-1",
-    [string]$bundle = "aws-bundle-name",
+    [string]$bundle = "",
     [string]$runMode = "AUTO_STOP",
-    [Parameter(Mandatory=$true)][string]$ADGroup,
-    [Parameter(Mandatory=$true)][string]$ADUsername
+    [Parameter(Mandatory=$true)][string]$ADGroup
+  #  [Parameter(Mandatory=$true)][string]$ADUsername
  ) 
 Import-Module ActiveDirectory
 write-host "Log file name: $log"
 write-host "AWS region: $region"
 write-host "Workspace bundle Name: $bundle"
 write-host "Active Directory Name: $ADGroup"
-write-host "AD Username: $ADUsername"
+#write-host "AD Username: $ADUsername"
 
 
 
